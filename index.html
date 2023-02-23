@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <header class="header-top">
+        <h1 class="titulo">Verificar Aprovação Escolar</h1>
+    </header>
+    <section class="container--section">
+        <h3 class="sub-titulo">Informe:</h3>
+        <div class="inputs">
+            <input type="number" name="bimestre-1" id="bimestre-1" placeholder="Nota do 1 bimestre">
+            <input type="number" name="bimestre-2" id="bimestre-2" placeholder="Nota do 2 bimestre">
+            <input type="number" name="bimestre-3" id="bimestre-3" placeholder="Nota do 3 bimestre">
+            <input type="number" name="bimestre-4" id="bimestre-4" placeholder="Nota do 4 bimestre">
+            <input type="number" name="media-escola" id="media-escolar" placeholder="Média adotada pela sua escola">
+            <button type="submit" onclick="validacao()">Verificar</button>
+        </div>
+    </section>
+    <div class="mostrar--div">
+        <span>Média final:<p id="media-final">indefinido</p></span>
+        <span>Média escolar:<p id="span-media-escolar">indefinido</p></span>
+        <span>Status:<p id="status-aluno">indefinido</p></span>
+        <span>P/aprovar:<p id="p-aprovar">indefinido</p></span>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
